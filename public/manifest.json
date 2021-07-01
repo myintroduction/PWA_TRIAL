@@ -1,0 +1,28 @@
+{
+  "name": "dcode PWA example",
+  "short_name": "PWA example",
+  "start_url": "/index.html",
+  "background_color": "#6dcdb1",
+  "theme_color": "#009578",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "images/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "maskable any"
+      },
+      {
+          "src": "images/logo512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable any"
+      },
+      {
+          "src": "image.png",
+          "sizes": "153x153",
+          "type": "image/png",
+          "purpose": "maskable any"
+      }
+  ]
+}
