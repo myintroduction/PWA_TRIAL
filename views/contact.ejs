@@ -1,301 +1,183 @@
-<!-- -------------------------------------navbar--------------------------------------------- -->
-
-<link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-
-<link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-/>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- ----------------------FAQ PART-------------------------- -->
-
-<!-- ------------------------------FAQ PART------------------------------- -->
-
-<body style = "background-color: #080808;">
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Easiest Way to Add Input Masks to Your Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- --------------------NAVBAR STARTS------------------------- -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container" style="margin-left:0px">
-    
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      
-      <a href="/">Home</a>
-      <a href="/users/about">About Us</a>
-      <a href="/users/contact">Contact Us</a>
-      <a href="/users/gallery"> Photo Gallery </a>
-      <a href="/users/registration">Registration</a>
-      <a href="/users/team">Our Team</a> 
-      <a href="https://discussion-portal-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
-      <a href="/users/stats">Stats & Sponsors</a>
-      <a href="/users/events">Events & Timeline</a>
-      <a href="https://video-chat-akss.herokuapp.com/">Video Chat (1:1)</a>
-      
+    <!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
+      <!-- <div class="container" style="margin-left:0px"> -->
+        <div class="w3-top" ">
+          <div class="w3-bar w3-black w3-card">
+        <div id="mySidebar" class="sidebar" >
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="/">Home</a> 
+          <a href="/users/about">About</a> 
+          <a href="/users/contact">Contact</a> 
+          <a href="/users/gallery">Gallery</a> 
+          <a href="/users/registration">Registration</a> 
+          <a href="/users/team">Team</a> 
+          <a href="https://discuss-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
+          <a href="/users/stats">Stats & Sponsors</a>
+          <a href="/users/events">Events & Timeline</a>
+          <a href="https://video-call-akss.herokuapp.com/" target="_blank">Video Chat (1:1)</a>
+          <a href="https://voting-portal-akss.herokuapp.com/">Voting Portal</a>
+          
+        </div>
+        
+        <div >
+          <button class="openbtn" onclick="openNav()">☰</button>  
+          <a style="font-size: 25px; color: white; margin-left: 10px;" href="/">Euforia</a>
+        </div>
+      </div>  
+      </div>
+    </nav>
+<!-- --------------------NAVBAR ENDS------------------------- -->
+    <div class="registration-form">
+        <form action="/users/contact" method="POST">
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputUsername">Your name</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder=" Enter Name">
+            </div>
+            <!-- <div class="form-group">
+                <input type="text" class="form-control item" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-block create-account">Create Account</button>
+            </div> -->
+            <div class="form-group">
+                <label for="exampleInputEmail">Email Address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder=" Enter Email id">
+              </div>	
+              <div class="form-group">
+                <label for="telephone">Mobile No.</label>
+                <input type="tel" class="form-control" name="phone" id="telephone" placeholder=" Enter 10-digit mobile no.">
+              </div>
+          
+              <div class="form-group">
+                  <label for ="description"> Message</label>
+                   <input type="text" class="form-control" id="description" name="message" placeholder="Enter Your Message"></>
+              </div>
+              <div>
+                  <button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+              </div>
+        </form>
     </div>
-      
-      <div >
-        <button class="openbtn" onclick="openNav()">☰</button>  
-      </div>
-    <a class="navbar-brand" href="/" style="margin-right: 650px;">Euforia</a>
-    
-  </div>
-</nav>
-
-
-<!-- ---------------------------------NAVBAR ENDS------------------------------------------------------------------- -->
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
-   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</div>
+<!-- --------------------FOOTER STARTS----------------------------- -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
   
-<section id="contact">
-			<div class="section-content">
-				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
-				<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
-			</div>
-			<div class="contact-section">
-			<div class="container">
-				<form action="/users/contact" method="POST">
-					<div class="col-md-6 form-line">
-			  			<div class="form-group">
-			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" class="form-control" name="name" id="name" placeholder=" Enter Name">
-				  		</div>
-				  		<div class="form-group">
-					    	<label for="exampleInputEmail">Email Address</label>
-					    	<input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder=" Enter Email id">
-					  	</div>	
-					  	<div class="form-group">
-					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" class="form-control" name="phone" id="telephone" placeholder=" Enter 10-digit mobile no.">
-			  			</div>
-			  		</div>
-			  		<div class="col-md-6">
-			  			<div class="form-group">
-			  				<label for ="description"> Message</label>
-			  			 	<input type="text" class="form-control" id="description" name="message" placeholder="Enter Your Message"></>
-			  			</div>
-			  			<div>
-
-			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-			  			</div>
-			  			
-					</div>
-				</form>
-			</div>
-		</section>
-    <!-- -------------------------------------------FOOTER--------------------------------- -->
-
-    <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-    
-          <!-- Twitter -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-twitter"></i
-          ></a>
-    
-          <!-- Google -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#"
-            role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-    
-          <!-- Instagram -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-instagram"></i
-          ></a>
-    
-          <!-- Linkedin -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-    
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-white" href="https://phcet.ac.in/#">PHCET</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-<!-- -------------------------------------------FOOTER--------------------------------- -->
-    </body>
- <style>
-    /* --------------------------------------NAVBAR STARTS---------------------------------------- */
-
-    .navbar-light .navbar-brand {
-      color: #fff;
-      font-size: 25px;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin-right: 620px;
-    }
-
-    .navbar-light .navbar-nav .active > .nav-link,
-    .navbar-light .navbar-nav .nav-link.active,
-    .navbar-light .navbar-nav .nav-link.show,
-    .navbar-light .navbar-nav .show > .nav-link {
-      color: #fff;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-      color: #fff;
-    }
-
-    .navbar-toggler {
-      background: #fff;
-    }
-
-    .navbar-nav {
-      text-align: center;
-    }
-
-    .nav-link {
-      padding: 0.2rem 1rem;
-    }
-
-    .nav-link.active,
-    .nav-link:focus {
-      color: #fff;
-    }
-
-    .navbar-toggler {
-      padding: 1px 5px;
-      font-size: 18px;
-      line-height: 0.3;
-    }
-
-    .navbar-light .navbar-nav .nav-link:focus,
-    .navbar-light .navbar-nav .nav-link:hover {
-      color: rgb(165, 47, 47);
-    }
+        <!-- Twitter -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://phcet.ac.in/#">PHCET</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
-    /* ---------------------------------------NAVBAR ENDS--------------------------------------------------------- */
-/* CSS Document */
-/*Contact sectiom*/
-.content-header{
-  font-family: 'Oleo Script', cursive;
-  color:#fcc500;
-  font-size: 45px;
-}
+<!-- -------------------------FOOTER ENDS----------------------- -->
 
-.section-content{
-  text-align: center; 
+    <script>
+        function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+  $('#birth-date').mask('00/00/0000');
+  $('#phone-number').mask('0000-0000');
+ })
+    </script>
+    <style>
 
-}
-#contact{
-    
-    font-family: 'Teko', sans-serif;
-  padding-top: 60px;
-  width: 100%;
-  width: 100vw;
-  height: 550px;
-  background: #3a6186; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color : #fff;    
-}
-.contact-section{
-  padding-top: 40px;
-}
-.contact-section .col-md-6{
-  width: 50%;
-}
+/* ---------------------------NAVBAR STYLE STARTS---------------- */
 
-.form-line{
-  border-right: 1px solid #B29999;
-}
-
-.form-group{
-  margin-top: 10px;
-}
-label{
-  font-size: 1.3em;
-  line-height: 1em;
-  font-weight: normal;
-}
-.form-control{
-  font-size: 1.3em;
-  color: #080808;
-}
-textarea.form-control {
-    height: 135px;
-   /* margin-top: px;*/
-}
-
-.submit{
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
 
 .sidebar {
   height: 100%;
@@ -313,7 +195,7 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -338,6 +220,7 @@ body {
   color: white;
   padding: 10px 15px;
   border: none;
+  margin: 10px;
 }
 
 .openbtn:hover {
@@ -354,19 +237,109 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-  </style>
 
-<script>
+/* ---------------------------NAVBAR STYLE ENDS---------------- */
 
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  
-  </script>
+        body{
+    background-color: #000000;
+}
 
+.registration-form{
+	margin-top: 85px;
+    margin-bottom: 400px;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    height: 598px;
+    /* max-height: fit-content; */
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: #5691ff;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+    </style>
+</body>
+</html>
