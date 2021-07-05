@@ -23,7 +23,11 @@ router.get('/polling', (req, res) => res.render('polling'));
 
 router.get('/stats', (req, res) => res.render('stats'));
 
+router.get('/signup', (req, res) => res.render('signup'));
 
+router.get('/success', (req, res) => res.render('success'));
+
+router.get('/fail', (req, res) => res.render('fail'));
 
 router.post("/contact", async (req, res) => {
 
@@ -309,7 +313,7 @@ router.post("/registration", async (req, res) => {
             });
             // End Mail code 2
 
-            dbObj.collection("users").insertOne(dataObj, function (err, data) {
+            dbObj.collection("registers").insertOne(dataObj, function (err, data) {
 
                 if (err) {
                     console.log("err2 = " + err);
