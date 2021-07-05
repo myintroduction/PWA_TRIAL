@@ -18,35 +18,37 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- -------------------------------------navbar--------------------------------------------- -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: black;">
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-
-      <a href="/">Home</a>
-      <a href="/users/about">About Us</a>
-      <a href="/users/contact">Contact Us</a>
-      <a href="/users/gallery"> Photo Gallery </a>
-      <a href="/users/registration">Registration</a>
-      <a href="/users/team">Our Team</a>
-      <a href="https://discussion-portal-akss.herokuapp.com/" target="_blank"
-        >Discussion Forum</a
-      >
-      <a href="/users/stats">Stats & Sponsors</a>
-      <a href="/users/events">Events & Timeline</a>
-      <a href="https://video-chat-akss.herokuapp.com/">Video Chat (1:1)</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/">Home</a> 
+        <a href="/users/about">About</a> 
+        <a href="/users/contact">Contact</a> 
+        <a href="/users/gallery">Gallery</a> 
+        <a href="/users/registration">Registration</a> 
+        <a href="/users/team">Team</a> 
+        <a href="https://discuss-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
+        <a href="/users/stats">Stats & Sponsors</a>
+        <a href="/users/events">Events & Timeline</a>
+        <a href="https://video-call-akss.herokuapp.com/" target="_blank">Video Chat (1:1)</a>
+        <a href="https://voting-portal-akss.herokuapp.com/">Voting Portal</a>
+        
+      </div>
+      
+      <div >
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        <a style="font-size: 25px; color: white; margin-left: 10px; " href="/">Euforia</a>
+      </div>
+    </div>  
     </div>
-    <div>
-      <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
-
-    <a class="navbar-brand" href="/" style="margin-right: 1100px;">Euforia</a>
-  </div>
-</nav>
-
+  </nav>
   <!-- ----------------gallery------------------------- -->
 
   <link
@@ -54,134 +56,150 @@
     rel="stylesheet"
     id="bootstrap-css"
   />
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
+  ---- Include the above in your HEAD tag -------- -->
 
-  <ul class="gallery_box" style="padding-top: 100px">
-    <li>
-      <a href="#0"
-        ><img src="https://picsum.photos/600/700/?random" />
-        <div class="box_data">
-          <span>Ravi With Bike</span>
-        </div></a
-      >
-    </li>
-    <li>
-      <a href="#0"
-        ><img src="https://picsum.photos/600/701/?random" />
-        <div class="box_data">
-          <span>Ravi Singh</span>
-        </div></a
-      >
-    </li>
-    <li>
-      <a href="#0"
-        ><img src="https://picsum.photos/600/702/?random" />
-        <div class="box_data">
-          <span>White wall</span>
-        </div></a
-      >
-    </li>
-    <li>
-      <a href="#0"
-        ><img src="https://picsum.photos/600/703/?random" />
-        <div class="box_data">
-          <span>Green Tree</span>
-        </div></a
-      >
-    </li>
-    <li style="position: relative; top: -134px">
-      <a href="#0"
-        ><img src="https://picsum.photos/600/704/?random" />
-        <div class="box_data">
-          <span>Blue</span>
-        </div></a
-      >
-    </li>
-    <li>
-      <a href="#0"
-        ><img src="https://picsum.photos/600/705/?random" />
-        <div class="box_data">
-          <span>Ravi</span>
-        </div></a
-      >
-    </li>
-  </ul>
 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Untitled</title>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-      />
-      <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
+<!------ Include the above in your HEAD tag ---------->
 
-    <body>
-      <div class="testimonials-clean">
-        <div class="container">
-          <div class="intro">
-            <h2 class="text-center">Testimonials</h2>
-            <p class="text-center">
-              Our customers love us! Read what they have to say below. Aliquam
-              sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet
-              vitae.
-            </p>
-          </div>
-          <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">
-                  Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                  lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est.
-                </p>
-              </div>
-              <div class="author">
-                <img class="rounded-circle" src="assets/img/1.jpg" />
-                <h5 class="name">Ben Johnson</h5>
-                <p class="title">CEO of Company Inc.</p>
-              </div>
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+ 
+
+
+    <!-- Page Content -->
+   <div class="container page-top">
+
+
+
+        <div class="row">
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                   
+                </a>
             </div>
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">
-                  Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                  est, et interdum justo suscipit id.
-                </p>
-              </div>
-              <div class="author">
-                <img class="rounded-circle" src="assets/img/3.jpg" />
-                <h5 class="name">Carl Kent</h5>
-                <p class="title">Founder of Style Co.</p>
-              </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
+                </a>
             </div>
-            <div class="col-md-6 col-lg-4 item">
-              <div class="box">
-                <p class="description">
-                  Aliquam varius finibus est, et interdum justo suscipit.
-                  Vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                  aliquam in tellus eu.
-                </p>
-              </div>
-              <div class="author">
-                <img class="rounded-circle" src="assets/img/2.jpg" />
-                <h5 class="name">Emily Clark</h5>
-                <p class="title">Owner of Creative Ltd.</p>
-              </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    </body>
-  </html>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                    <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+                </a>
+            </div>
+       </div>
+    </div>
+<script>
+  $(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+    
+</script>
+<style>
+  body {
+  background-color:#1d1d1d !important;
+  font-family: "Asap", sans-serif;
+  color:#989898;
+  margin:10px;
+  font-size:16px;
+}
+
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+        
+        .page-top{
+            margin-top:85px;
+        }
+
+   
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+
+</style>
   <!-- ------------------------------------------FOOTER------------------------------------- -->
   <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
@@ -483,7 +501,7 @@
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -508,6 +526,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    margin: 10px;
   }
 
   .openbtn:hover {
