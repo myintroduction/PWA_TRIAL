@@ -19,31 +19,32 @@
       crossorigin="anonymous"
     />
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container">
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-
-      <a href="/">Home</a>
-      <a href="/users/about">About Us</a>
-      <a href="/users/contact">Contact Us</a>
-      <a href="/users/gallery"> Photo Gallery </a>
-      <a href="/users/registration">Registration</a>
-      <a href="/users/team">Our Team</a>
-      <a href="https://discussion-portal-akss.herokuapp.com/" target="_blank"
-        >Discussion Forum</a
-      >
-      <a href="/users/stats">Stats & Sponsors</a>
-      <a href="/users/events">Events & Timeline</a>
-      <a href="https://video-chat-akss.herokuapp.com/">Video Chat (1:1)</a>
-    </div>
-    <div>
-      <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
-
-    <a class="navbar-brand" href="/" style="margin-right: 1100px;">Euforia</a>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: black;">
+      <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="/">Home</a> 
+              <a href="/users/about">About</a> 
+              <a href="/users/contact">Contact</a> 
+              <a href="/users/gallery">Gallery</a> 
+              <a href="/users/registration">Registration</a> 
+              <a href="/users/team">Team</a> 
+              <a href="https://discuss-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
+              <a href="/users/stats">Stats & Sponsors</a>
+              <a href="/users/events">Events & Timeline</a>
+              <a href="https://video-call-akss.herokuapp.com/" target="_blank">Video Chat (1:1)</a>
+              <a href="https://voting-portal-akss.herokuapp.com/">Voting Portal</a>
+              
+            </div>
+            
+            <div >
+              <button class="openbtn" onclick="openNav()">☰</button>  
+              <a style="font-size: 25px; color: white; margin-left: 10px; text-decoration: none;" href="/">Euforia</a>
+            </div>
+          </div>  
+          </div>
+        </nav>
 
 <section class="our-webcoderskull padding-lg">
   <!-- <div class="container"> -->
@@ -550,7 +551,7 @@
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -575,6 +576,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    margin: 5px;
   }
 
   .openbtn:hover {
