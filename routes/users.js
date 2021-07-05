@@ -22,7 +22,11 @@ router.get('/team', (req, res) => res.render('team'));
 router.get('/polling', (req, res) => res.render('polling'));
 
 router.get('/stats', (req, res) => res.render('stats'));
+router.get('/signup', (req, res) => res.render('signup'));
 
+router.get('/success', (req, res) => res.render('success'));
+
+router.get('/fail', (req, res) => res.render('fail'));
 
 
 router.post("/contact", async (req, res) => {
