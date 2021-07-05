@@ -37,8 +37,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <body style="background-color: black">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="margin-left: -100px;">
-    <div class="container" style="margin-left:-10px">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <div class="container" style="margin-left:-10px">
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
@@ -48,7 +48,7 @@
         <a href="/users/gallery"> Photo Gallery </a>
         <a href="/users/registration">Registration</a>
         <a href="/users/team">Our Team</a>
-        <a href="https://discussion-portal-akss.herokuapp.com/" target="_blank"
+        <a href="https://discuss-akss.herokuapp.com/" target="_blank"
           >Discussion Forum</a
         >
         <a href="/users/stats">Stats & Sponsors</a>
@@ -61,13 +61,39 @@
       </div>
       <a class="navbar-brand" href="/" style="margin-right:500px">Euforia</a>
     </div>
-  </nav>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: black;">
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="/">Home</a> 
+            <a href="/users/about">About</a> 
+            <a href="/users/contact">Contact</a> 
+            <a href="/users/gallery">Gallery</a> 
+            <a href="/users/registration">Registration</a> 
+            <a href="/users/team">Team</a> 
+            <a href="https://discuss-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
+            <a href="/users/stats">Stats & Sponsors</a>
+            <a href="/users/events">Events & Timeline</a>
+            <a href="https://video-call-akss.herokuapp.com/" target="_blank">Video Chat (1:1)</a>
+            <a href="https://voting-portal-akss.herokuapp.com/">Voting Portal</a>
+            
+          </div>
+          
+          <div >
+            <button class="openbtn" onclick="openNav()">☰</button>  
+            <a style="font-size: 25px; color: white; margin-left: 10px; text-decoration: none;" href="/">Euforia</a>
+          </div>
+        </div>  
+        </div>
+      </nav>
 
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <div class="typing-demo">Meet our Speakers!</div>
-  </div>
+  </div> -->
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
@@ -192,15 +218,16 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
+<!-- ------------------------------------------------------------- -->
   </div>
 
-  <div class="wrapper">
-    <div class="typing-demo">Schedule for Event</div>
-  </div>
+  <p class="dptxt">
+    Schedule for event<br /><a href="/room/"></a>
+  </p>
 
   <!-- ---------------------------------------TIMELINE FOR EVENTS------------------------------- -->
-  <div class="container" style="margin-top: 150px">
+  <div class="container" style="margin-top: 150px; margin-bottom: 50px">
     <div class="main-timeline">
       <!-- start experience section-->
       <div class="timeline">
@@ -295,6 +322,11 @@
       <!-- end experience section-->
     </div>
   </div>
+  <div class="center">
+    <a href="https://event-calendar-akss.herokuapp.com/" target="_blank">
+    <button class="button">Click here for calender</button>
+  </a>
+  </div>
   <!-- --------------------------------------FOOTER---------------------------------------------------- -->
   <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
@@ -364,6 +396,39 @@
 </body>
 
 <style>
+    .dptxt{
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        font-family: Hack, sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        letter-spacing: 5px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine 5s linear infinite;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background: #000; */
+      }
+
+      @keyframes shine {
+        0% {
+          background-position-x: -500%;
+        }
+        100% {
+          background-position-x: 500%;
+        }
+      }
+
+
+
   .timeline {
     position: relative;
     padding: 4px 0 0 0;
@@ -672,7 +737,7 @@
   body {
     background-color: #f7f7f7;
     margin-top: 20px;
-    color: white;
+    color: #ffffff;
   }
 
   .main-timeline {
@@ -974,7 +1039,7 @@
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -999,6 +1064,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    margin: 20px;
   }
 
   .openbtn:hover {
@@ -1019,6 +1085,52 @@
       font-size: 18px;
     }
   }
+
+  .center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-80%, -80%);
+  transform: translate(-50%, -80%);
+  padding-bottom: 20px;
+  padding-bottom: 20px;
+  /* font-size: 2.0rem; */
+}
+.button {
+  position: relative;
+  background-color: #686d68;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 4px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 </style>
 
 <script>
